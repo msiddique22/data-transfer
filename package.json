@@ -1,0 +1,43 @@
+{
+  "name": "phonebridge-pwa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "tsx server/server.ts",
+    "dev:all": "concurrently -k -n \"WEB,WS\" -c \"cyan.bold,magenta.bold\" \"vite\" \"tsx watch server/server.ts\"",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
+    "idb": "^8.0.3",
+    "lucide-react": "^1.16.0",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwind-merge": "^3.5.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^9.2.1",
+    "oxlint": "^1.88.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.21.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}
